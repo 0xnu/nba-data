@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.6"
+# install dependencies
+install:
+  - pip3 install -r requirements.txt
+# run command
+script:
+  - python3 nba-data.py
