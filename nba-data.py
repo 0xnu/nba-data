@@ -63,9 +63,9 @@ if __name__ == '__main__':
             with open('player_data/%s.json' % current['person_id'], 'w+') as f:
                 f.write(json.dumps(current))
 
-            time.sleep(1)
-        except Exception as e:
-            print(e)
-            continue
+            #time.sleep(1)
+        #except Exception as e:
+            #print(e)
+            #continue
 
-sys.exit(0)
+            sys.exit(0)
