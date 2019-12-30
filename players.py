@@ -10,4 +10,4 @@ with open('./data/players.json', 'w') as f:
 # Convert to .json to .csv
 df = pd.DataFrame(data['resultSet']['rowSet'], columns=data['resultSet']['headers'])
 df.to_csv('./data/players.csv', index=False)
-print('I am done scraping data. Bye!')
+

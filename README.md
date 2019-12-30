@@ -10,15 +10,7 @@ Python 3 is required to scrape data. Install the project's dependencies with:
 pip3 install -r requirements.txt
 ```
 
-## Running
-
-Run team logos and convert SVG to PNG:
-
-```shell
-chmod +x nba-logos.sh && ./nba-logos.sh
-```
-
-Scrape data:
+## Scrape data
 
 ```shell
 chmod +x scrape.sh && ./scrape.sh
