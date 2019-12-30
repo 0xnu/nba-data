@@ -2,4 +2,4 @@ CairoSVG==2.4.2
 pprint==0.1
 pandas==0.25.3
 requests==2.22.0
-simplejson==3.17.0
+ujson==1.35
