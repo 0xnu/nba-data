@@ -8,6 +8,8 @@ data = players.json()
 
 with open('./data/players.json', 'w') as f:
     json.dump(data, f)
+except:
+    print(e)
 
 # Convert to .json to .csv
 df = pd.DataFrame(data['resultSet']['rowSet'], columns=data['resultSet']['headers'])
