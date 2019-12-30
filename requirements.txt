@@ -2,4 +2,4 @@ CairoSVG==2.4.2
 pprint==0.1
 pandas==0.25.3
 requests==2.22.0
-json-encoder==0.4.4
+move==0.1.3
