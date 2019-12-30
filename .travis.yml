@@ -7,4 +7,4 @@ install:
   - pip3 install -r requirements.txt
 # run command
 script:
-  - python3 nba-data.py
+  - python3 players.py
