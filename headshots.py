@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import os
 import sys
 import subprocess
@@ -13,7 +12,9 @@ def string_clean(old_string):
     return ''.join(char for char in old_string if char in valid_chars)
 
 base_url = "http://i.cdn.turner.com/nba/nba/.element/img/2.0/sect/statscube/players/large/"
+
 missing_file = open('missing_players.txt','w')
+
 with open('players.txt','r') as f:
     for line in f:
         desc = list(map(string_clean, line.split(',')))
@@ -28,4 +29,5 @@ with open('players.txt','r') as f:
                 photo.write(search.content)
         else:
             missing_file.write(disp_name + '\n')
+
 missing_file.close()

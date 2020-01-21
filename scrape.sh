@@ -12,7 +12,7 @@ mkdir -p ./data/logos/png; mkdir -p ./data/logos/svg
 mv *.png ./data/logos/png; mv *.svg ./data/logos/svg
 
 python3 ./players.py && python3 ./headshots.py
-mkdir -p ./data/players; mv *.png ./data/players
+mv *.png ./data/players
 
 # Push to repository
 git add .
