@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import subprocess
 import requests
 import string
 
@@ -16,9 +21,9 @@ with open('players.txt','r') as f:
         search_name = '_'.join(name.lower() for name in reversed(desc))
         disp_name = ' '.join(name for name in reversed(desc))
         url = base_url + search_name + '.png'
-        search = requests.get(url)
+        search = requests.get(url, timeout=None)
         if search.status_code == requests.codes.ok:
-            file_name = './data/players/{}.png'.format(disp_name)
+            file_name = './{}.png'.format(disp_name)
             with open(file_name,'wb') as photo:
                 photo.write(search.content)
         else:
