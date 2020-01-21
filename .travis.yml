@@ -7,3 +7,6 @@ install:
 # run command
 script:
   - python3 players.py
+
+after_success:
+  - coveralls
